@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 interface Match {
   country: string;
-  captial: string;
+  capital: string;
 }
 
 //TODO:get this data from the backend
@@ -32,7 +32,7 @@ const CityMatcher = () => {
     setShuffleMatchedData(shuffleArray(preMatchedData));
   }, []);
 
-  const handleCaptialQuick = (match: Match) => {
+  const handlecapitalQuick = (match: Match) => {
     if (match === selectedMatch) {
       const newPairedMatch = [...pairedData, match];
       setPairedData(newPairedMatch);
@@ -77,7 +77,7 @@ const CityMatcher = () => {
           {shuffleMatchData?.map((match, index) => (
             <button
               disabled={selectedMatch == null}
-              onClick={() => handleCaptialQuick(match)}
+              onClick={() => handlecapitalQuick(match)}
               className={`${
                 isMatched(match)
                   ? "bg-green-500 hover:bg-green-700 "
@@ -87,7 +87,7 @@ const CityMatcher = () => {
             `}
               key={index}
             >
-              {match.captial}
+              {match.capital}
             </button>
           ))}
         </div>
