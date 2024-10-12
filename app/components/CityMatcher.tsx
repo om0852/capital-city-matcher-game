@@ -51,7 +51,7 @@ const CityMatcher = () => {
           You Win!
         </h2>
       )}{" "}
-      <div className="flex gap-5 mt-10">
+      <div className="flex gap-5 mt-[2vh] h-[100vh]">
         <div className="flex flex-col gap-2">
           {preMatchedData.map((match, index) => (
             <button
