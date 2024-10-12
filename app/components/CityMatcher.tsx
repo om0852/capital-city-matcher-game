@@ -7,10 +7,18 @@ interface Match {
 
 //TODO:get this data from the backend
 const preMatchedData = [
-  { country: "USA", captial: "Washington D.C" },
-  { country: "UK", captial: "London" },
-  { country: "France", captial: "Paris" },
-];
+    { country: "Canada", capital: "Ottawa" },
+    { country: "Australia", capital: "Canberra" },
+    { country: "Germany", capital: "Berlin" },
+    { country: "Japan", capital: "Tokyo" },
+    { country: "Brazil", capital: "Brasília" },
+    { country: "Italy", capital: "Rome" },
+    { country: "South Africa", capital: "Pretoria" },
+    { country: "Russia", capital: "Moscow" },
+    { country: "China", capital: "Beijing" },
+    { country: "Mexico", capital: "Mexico City" },
+  ];
+  
 
 const shuffleArray = (matchingData: Match[]) => {
   return matchingData.slice().sort(() => Math.random() - 0.5);
